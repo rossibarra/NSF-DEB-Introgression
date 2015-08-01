@@ -29,15 +29,17 @@
 \usepackage{wrapfig} %wrap text around figures
 \usepackage[leftcaption]{sidecap} % side captions
 \sidecaptionvpos{figure}{c} %position side caption
-
+\usepackage[colorinlistoftodos]{todonotes} % comments in margins
 \usepackage[round,authoryear]{natbib} %biblio format!
 %\usepackage[]{natbib}
 %\bibpunct[; ]{[}{]}{,}{n}{}{;} 
 %\bibliographystyle{unsrtnat}
 \usepackage{multirow} %multirow tables
 \usepackage{booktabs} %funky tabs in tables
-\newcommand{\jri}[1]{\textcolor{blue}{ \emph{\scriptsize  #1}} }
-\newcommand{\mbh}[1]{\textcolor{red}{ \emph{\scriptsize  #1}} }
+\definecolor{flame}{rgb}{0.89, 0.35, 0.13}
+\definecolor{glaucous}{rgb}{0.38, 0.51, 0.71}
+\newcommand{\jri}[1]{\todo[size=\scriptsize, color=flame]{#1}}
+\newcommand{\mbh}[1]{\todo[size=\scriptsize, color=glaucous]{#1}}
 \renewcommand{\thesubsection}{Objective \Roman{subsection}}
 \renewcommand{\thesubsubsection}{\thesubsection\Alph{subsubsection}}
 \renewcommand{\theenumi}{\Alph{enumi}}
