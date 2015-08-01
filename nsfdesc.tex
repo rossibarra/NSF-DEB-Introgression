@@ -56,7 +56,6 @@ Through targeted collections, high-density genotyping, population genomic analys
 
 \item \emph{Is there evidence of selection on putatively adaptive phenotypes across hybrid zones?} 
 \end{enumerate}
-
 \subsection*{Objective II: Determine the extent to which anthropogenic movement of maize has enabled hybridization among taxa in \emph{Zea}}
 Maize was domesticated in southwest Mexico from \zp{} $\sim$9,000 BP \citep{Matsuoka2002} and quickly spread throughout the Americas, bringing it into contact with other teosinte taxa.
 Hybridization has been observed between maize and each of these teosintes, raising questions about the interaction between colonization and hybridization. \jri{never sure when to use ``gene flow'', ``introgression'', or ``hybridization''. could you make sure we are using appropriately and consistently throughout?}
@@ -101,13 +100,7 @@ Maize domestication from \emph{parviglumis} occurred recently on an evolutionary
 During this expansion, maize was brought into sympatry with new wild relatives that were likely allopatric to the progenitor of maize (\emph{i.e., parviglumis}) for long periods prior to domestication \citep{hufford2012inferences}. 
 Our recent work has provided evidence of introgression from \emph{mexicana} into maize during its colonization of the highlands of the Mexican Central Plateau.  
 We found consistent introgression into several highland maize populations at QTL for phenotypes (\emph{e.g.}, pigment and macrohairs) that distinguish highland \zm{} from lowland \zp{} teosinte, and showed that both \zm{} phenotypes and higher growth rate were found in maize plants with \zm{}  introgression \citep{Hufford2013}.
-Our interpretation of these results is that maize received adaptive introgression from \emph{mexicana} that allowed the crop to spread into the highlands of Mexico. \jri{should we move some of these sentenes on hufford 2013 down below with objetive 2?} \mbh{I'll leave that up to you...feel free to move them and patch up a transition here it you'd like}
-
-Subsequent to its diffusion into the Mexican highlands, maize spread into sympatry with additional teosinte taxa in Guatemala including \emph{Zea luxurians} (hereafter, \emph{luxurians}) and \emph{Zea mays} ssp. \emph{huehuetenangensis} (hereafter, \emph{huehuetenangensis}), each adapted to environmental conditions very different from those of the progenitor \emph{parviglumis}. 
-Although maize is known to hybridize with both taxa, the extent and adaptive significance of gene flow between these teosintes and maize is unknown.  
-Additionally, based on analysis of a small number of resequenced loci, \emph{mexicana} haplotypes appear to be segregating in \emph{luxurians} \citep{Ross-Ibarra2009a}.  
-Since \emph{mexicana} and \emph{luxurians} are entirely allopatric in their distributions, this suggests maize may have served as a bridge for gene flow between these two taxa.  
-Further work will be necessary to explore this possibility and to assess if the genomes of \emph{Zea} species have been largely altered through gene flow during the spread of maize across the Americas (see \ref{ss:genuswide}).
+Our interpretation of these results is that maize received adaptive introgression from \emph{mexicana} that allowed the crop to spread into the highlands of Mexico. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %SPECIFIC OBJECTIVES
@@ -115,9 +108,7 @@ Further work will be necessary to explore this possibility and to assess if the 
 \section*{Research Plan}
 
 
-\jri{an idea on order. currently you go 1) popgen 2) what kind of hybrid zone 3) selection on phenotypes. I think it makes more sense to do:
-1) What kind of hybrid zone? (solid, i have come around to liking this one)
-2) Are adaptive phenotypes under selection? (what are the alternate hypotheses here?). Maybe if you specify under selection in hybrid pops? Then this builds on ecotone/tension. If hybrids have higher fitness in some pops we should see evidence of selection on some of these traits. if hybrids uniformly suck, putatively adaptive traits should show no evidence of selection in those pops (because they suck due to e.g. BDM incompatibilities or something)
+\jri{an idea on order. currently 1) popgen 2) what kind of zone 3) phenotype selection. What about 1) What kind of zone? 2) phenotype selection? 
 3) This builds on 2 by asking whether patterns are convergent across pops. If pops uniformly suck, then do we see the same chromosome regions resistant to introgression (the BDM loci maybe)? in different pops?  If pops have higher fitness in some locales, do we see the same loci?  so this gets at convergence of the outcomes of hybridization whether good or bad.  you then move the GWAS here and mention that we can then ask if GWAS loci show different patterns (under BDM model i think we don't expect them too).
 }
 
@@ -182,10 +173,10 @@ We will also measure plant density, slope of the terrain, and canopy cover at ea
 \paragraph{\emph{Sample Genotyping and Sequencing:}}
 DNA for genotyping will be isolated using a modified CTAB procedure \citep{Saghai-Maroof1984}. \jri{another FYI: CTAB sucks for WGS. fine for GBS though} For sample genotyping ($n=240$) we will utilize the services of the Genomic Diversity Facility at Cornell University to implement a reduced representation approach to next-generation sequencing called Genotyping By Sequencing (GBS; \citealt{Elshire2011}; see attached letter of commitment from Dr. Sharon Mitchell). To date, this method has been implemented to genotype tens of thousands of maize samples and a bioinformatics pipeline (TASSLE-GBS) has been constructed that allows for genotyping $\sim$1,000,000 SNPs in maize \citep{Glaubitz2014} using standard GBS data. 
 We will multiplex only 48 individuals per lane (instead of the standard 384 used for inbred lines) to minimize missing data and errors in identifying heterozygous genotypes. 
-Based on our experience with thousands of diverse maize and teosinte, even after filtering for missing data, GBS provides many more markers with minimal ascertainment bias at a fraction of the cost of other available technologies. 
+Based on our experience with diverse maize and teosinte \citep[e.g.][]{Takuno15062015, mezmouk2014pattern}, even after filtering for missing data, GBS provides many more markers with minimal ascertainment bias at a fraction of the cost of other available technologies. 
 
 In addition to GBS data, we will generate full-genome sequence through the Iowa State University DNA Facility for a single hybrid individual from each hybrid zone.  We will generate two lanes of Illumina HiSeq 150bp, paired-end data per individual.  
-We have previous experience dealing with whole genome shotgun data \citep{Gore2009,Chia2012a,Hufford2012b}, and have recently developed and implemented an open-source pipeline for read-mapping and SNP calling (\url{https://github.com/RILAB/paap}) using the existing maize B73 reference genome. \jri{bad news: nobody in my lab can get that damn pipeline working. i haven't tried myself. leave it in for now, just another FYI}
+We have previous experience dealing with whole genome shotgun data \citep{Gore2009,Chia2012a,Hufford2012b,da2015origin}, and have recently developed and implemented an open-source pipeline for read-mapping and SNP calling (\url{https://github.com/RILAB/paap}) using the existing maize B73 reference genome. 
 
 \paragraph{\emph{Population Genomic Analyses:}} 
 We will assess the genome-wide patterns of ancestry using several approaches.  
@@ -207,18 +198,12 @@ We will explore options for our third hybrid zone garden during our collections 
 The hybrid zone is less than 50 kilometers from the host institution of Dr. Sawers (Langebio in Irapuato, Mexico) and identification of an appropriate site should be straight-forward.
 Each garden will consist of three complete blocks including a randomization of three plants from each of 15 sampling sites in the 16 populations described in \ref{sss:genomescan} (3 blocks x 3 plants x 15 sites x 16 populations = 2,160 plants per garden).  
 We will measure fitness-related phenotypes (percent germination, germination rate, plant height at 15-day intervals, seed set, 50-seed weight, total-above-ground biomass, stomatal conductance and survival), putatively adaptive phenotypes across the altitudinal gradient (macrohair density, pigmentation extent, and flowering time) and phenotypes for which there is no \emph{a priori} evidence of selection across an elevational gradient (culm diameter and the width of the leaf beneath the first lateral branch at the time of flowering).  \jri{culm diameter is associated with Inv1n which shows strong altitudinal clines -- see Zhou's paper. i've never looked to see if the phenotype shows a cline but based on that i suspect it might!}
-Analysis of relative fitness of hybrid and parental plants across our garden sites will provide evidence regarding ecotone vs. tension zone dynamics in teosinte hybrid zones.  Ecotone dynamics would be supported by hybrids possessing the highest fitness of all plants in the mid-elevation gardens, whereas tension zone dynamics would be supported by hybrids having lower fitness in all gardens.  Phenotypic data for putatively adaptive traits and traits with no evidence of selection will be analyzed in \ref{sss:driftsel}. \jri{other thoughts: 1) somewhere you need to say these are half-sib families so you can do qst-fst. do you want to explain qst-fst? 2) if these are half sib families and you have a reasonable \% selfs, we have code that can impute and phase mom and kids. up to you if worth mentioning; I can provide github link}
-		
-%{
-%\color{red}  
-%\noindent\makebox[\linewidth]{\rule{\linewidth}{0.4pt}}
-%JRI STOPPED HERE \\
-%\noindent\makebox[\linewidth]{\rule{\linewidth}{0.4pt}}
-%}
-		
+Analysis of relative fitness of hybrid and parental plants across our garden sites will provide evidence regarding ecotone vs. tension zone dynamics in teosinte hybrid zones.  Ecotone dynamics would be supported by hybrids possessing the highest fitness of all plants in the mid-elevation gardens, whereas tension zone dynamics would be supported by hybrids having lower fitness in all gardens.  Phenotypic data for putatively adaptive traits and traits with no evidence of selection will be analyzed in \ref{sss:driftsel}. \jri{need to say these are half-sib families so you can do qst-fst.}  		
 \subsubsection{Is there evidence for selection on putatively adaptive phenotypes across hybrid zones?}
 \label{sss:driftsel}
-Stem pigmentation, macrohair density, and flowering time in particular are thought to be under selection in teosinte across an elevational gradient.  Pigmented and pilose plants have an advantage in retaining heat at high elevation (for a discussion of highland adaptation in the context of maize see \citealt{Eagles1994}). Additionally, \emph{mexicana} flowers much earlier than \emph{parviglumis} \citep{Rodriguez2006}, which may represent an adaptation to shorter growing seasons at high elevation. We will combine our genome-wide marker data obtained in \ref{sss:genomescan} with phenotypic data collected in our common garden experiments in \ref{sss:fitness} in order to evaluate evidence for selection on these potentially adaptive phenotypes.  A method recently developed by \citet{Ovaskainen2011} and implemented in the software DRIFTSEL \citep{Karhunen2013} is particularly suited to this purpose.  The method builds upon the $F_{ST}$--$Q_{ST}$ framework for comparison of population differentiation and quantitative phenotype divergence and allows the signature of selection on a given phenotypic trait to be distinguished from genetic drift.  The strength of evidence for selection based on DRIFTSEL for putatively adaptive phenotypes (pigment, macrohairs, flowering time) will be compared to that of phenotypes with no \emph{a priori} evidence of selection across an elevational gradient (culm diameter and leaf width). \jri{culm diameter is associated with Inv1n and which does show an elevation cline. mexicana has thicker culms than parv i believe}
+\jri{what are alternate hypotheses here? i think if you specify {\bf in} hybrid pops, then this could build on ecotone/tension (see idea above on order). If hybrids have higher fitness in some pops we should see evidence of selection on these traits. if hybrids uniformly suck, putatively adaptive traits should show no evidence of selection}
+
+Stem pigmentation, macrohair density, and flowering time in particular are thought to be under selection in teosinte across an elevational gradient.  Pigmented and pilose plants have an advantage in retaining heat at high elevation (for a discussion of highland adaptation in the context of maize see \citealt{Eagles1994}). Additionally, \emph{mexicana} flowers much earlier than \emph{parviglumis} \citep{Rodriguez2006}, which may represent an adaptation to shorter growing seasons at high elevation. We will combine our genome-wide marker data obtained in \ref{sss:genomescan} with phenotypic data collected in our common garden experiments in \ref{sss:fitness} in order to evaluate evidence for selection on these potentially adaptive phenotypes.  A method recently developed by \citet{Ovaskainen2011} and implemented in the software DRIFTSEL \citep{Karhunen2013} is particularly suited to this purpose.  The method builds upon the $F_{ST}$--$Q_{ST}$ \jri{do we need to explain qst-fst?} framework for comparison of population differentiation and quantitative phenotype divergence and allows the signature of selection on a given phenotypic trait to be distinguished from genetic drift.  The strength of evidence for selection based on DRIFTSEL for putatively adaptive phenotypes (pigment, macrohairs, flowering time) will be compared to that of phenotypes with no \emph{a priori} evidence of selection across an elevational gradient (culm diameter and leaf width). \jri{culm diameter is associated with Inv1n and which does show an elevation cline. mexicana has thicker culms than parv i believe}
 
 In addition, we will conduct association analyses to connect genotype to phenotype using GBS data described in \ref{sss:genomescan} and phenotypic data for potentially adaptive traits and traits gauging fitness.  Association analysis will be conducted using TASSEL5.0 \citep{Bradbury2007}. Significant associations will then be cross-referenced with regions of excess ancestry from \emph{parviglumis} or \emph{mexicana} in hybrid populations and zones identified in \ref{sss:genomescan}, particularly those that show evidence of selection based on additional population genetic summary statistics.  This final combination of data and analyses could reveal the phenotypes, loci, and ancestry source under selection within hybrid zones.
 
@@ -227,8 +212,6 @@ In addition, we will conduct association analyses to connect genotype to phenoty
 \paragraph{\emph{Potential Challenges:}}
 
 \subsection{Crop-wild introgression during maize diffusion} \label{ss:genuswide}
-
-%\jri{i like having an intro that ties together the questions. i think some of the text from rational could go here and in your objective 1 above. i still think the rational/significance should address not what the questions are in teosinte per se, but WHY these questions are of interest to a broader audience. for example, i think the scale of adaptive introgression and local adaptation is broadly of interest, as is how repeatable evolution is across replicate hybrid zones. in the rationale and signficance section we only need motivate the reader that these are cool questions; there they can trust us that these questions apply to teosinte.  then, in the objectives below, we give them the relevant background so they can put those cool questions in context for our study. thoughts?}
 
 %\subsection*{Objective II: Determine the extent to which anthropogenic movement of maize has enabled hybridization among taxa in \emph{Zea}}
 %%Determine the extent to which hybridization and introgression have altered the \emph{Zea} genus during the post domestication spread of maize}
@@ -242,6 +225,11 @@ In addition, we will conduct association analyses to connect genotype to phenoty
 %\end{enumerate}
 
 
+Subsequent to its diffusion into the Mexican highlands, maize spread into sympatry with additional teosinte taxa in Guatemala including \emph{Zea luxurians} (hereafter, \emph{luxurians}) and \emph{Zea mays} ssp. \emph{huehuetenangensis} (hereafter, \emph{huehuetenangensis}), each adapted to environmental conditions very different from those of the progenitor \emph{parviglumis}. 
+Although maize is known to hybridize with both taxa, the extent and adaptive significance of gene flow between these teosintes and maize is unknown.  
+Additionally, based on analysis of a small number of resequenced loci, \emph{mexicana} haplotypes appear to be segregating in \emph{luxurians} \citep{Ross-Ibarra2009a}.  
+Since \emph{mexicana} and \emph{luxurians} are entirely allopatric in their distributions, this suggests maize may have served as a bridge for gene flow between these two taxa.  
+Further work will be necessary to explore this possibility and to assess if the genomes of \emph{Zea} species have been largely altered through gene flow during the spread of maize across the Americas (see \ref{ss:genuswide}).
 
 
 Following domestication, maize spread rapidly across the Americas, colonizing novel environments different from that inhabited by its wild ancestor \zp. 
