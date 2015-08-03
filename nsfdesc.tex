@@ -186,7 +186,7 @@ While we cannot predict whether tension zone or ecotone dynamics define teosinte
 If we find that hybrids are selected against and exist within two discrete tension zones, then our primary interest will be in investigating the level of convergence in hybrid inviability loci (\emph{i.e.,} Dobzhansky-Muller incompatibilities) across populations and independent hybrid zones.
 Should hybrid populations show superior fitness in our intermediate garden alone and follow an ecotone model, we will instead investigate convergence in the genetic architecture of adaptive introgression.
 
-During year two of our proposed project, leaf tissue will be collected from a single plant per sampling site ($n=240$) in our mid-elevation common garden (see \ref{sss:fitness}) at the 5-7 leaf stage, stored in silica, and shipped to Iowa State University for DNA isolations, subsequent genotyping and full-genome sequencing.
+During the initial seed increase at our Irapuato field site in year one, leaf tissue will be collected from a single plant per sampling site ($n=240$; see \ref{sss:fitness}) at the 5-7 leaf stage, stored in silica, and shipped to Iowa State University for DNA isolations, subsequent genotyping and full-genome sequencing.
 DNA for genotyping will be isolated using the Qiagen DNeasy Plant Mini Kit.
 For sample genotyping ($n=240$) we will utilize the services of the Genomic Diversity Facility at Cornell University to implement a reduced representation approach to next-generation sequencing called Genotyping By Sequencing (GBS; \citealt{Elshire2011}).
 To date, this method has been implemented to genotype tens of thousands of maize samples and a bioinformatics pipeline (TASSLE-GBS) has been constructed that allows for genotyping $\sim$1,000,000 SNPs in maize \citep{Glaubitz2014} using standard GBS data. 
@@ -204,24 +204,33 @@ Second, we will implement haplotype-based methods for detecting introgression \c
 We will evaluate \emph{parviglumis} and \emph{mexicana} ancestry on a site-by-site basis across each hybrid genome and determine level of convergence at three levels: individual, population, and independent hybrid zone.  
 Chromosomal regions showing an excess of ancestry from one taxon in hybrid populations will be inspected for evidence of selection using a combination of site-frequency-, linkage-disequilibrium-, and population-differentiation-based methods \citep[reviewed in][]{Vitti2013}.
 Chromosomal regions showing strong evidence of selection across individuals within a hybrid zone based on analysis of GBS data will be inspected in our whole-genome resequencing data to refine haplotype boundaries. 
-Whole genome sequence data will also allow estimation of the age of the introgression and, potentially, the identification of candidate causal polymorphisms.
+Whole genome sequence data will also potentially allow the identification of candidate causal polymorphisms under purifying (tension zone) or positive directional (ecotone) selection.
 
 
 
 %PHENOTYPE SELECTION%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Is there evidence for selection on putatively adaptive phenotypes across hybrid zones?}
 \label{sss:driftsel}
-\jri{background then hypotheses here. change focus to selection {\bf in hybrid pops}. then build on part 1: if hybrids higher fitness we should see selection on phenotypes. if hybrids suck, adaptive phenos show no selection (or selection in wrong direction?)}
+%\jri{background then hypotheses here. change focus to selection {\bf in hybrid pops}. then build on part 1: if hybrids higher fitness we should see selection on phenotypes. if hybrids suck, adaptive phenos show no selection (or selection in wrong direction?)}
 
-Stem pigmentation, macrohair density, and flowering time in particular are thought to be under selection in teosinte across an elevational gradient.  Pigmented and pilose plants have an advantage in retaining heat at high elevation (for a discussion of highland adaptation in the context of maize see \citealt{Eagles1994}). Additionally, \emph{mexicana} flowers much earlier than \emph{parviglumis} \citep{Rodriguez2006}, which may represent an adaptation to shorter growing seasons at high elevation. We will combine our genome-wide marker data obtained in \ref{sss:genomescan} with phenotypic data collected in our common garden experiments in \ref{sss:fitness} in order to evaluate evidence for selection on these potentially adaptive phenotypes.  A method recently developed by \citet{Ovaskainen2011} and implemented in the software DRIFTSEL \citep{Karhunen2013} is particularly suited to this purpose.  The method builds upon the $F_{ST}$--$Q_{ST}$  framework for comparison of population differentiation and quantitative phenotype divergence and allows the signature of selection on a given phenotypic trait to be distinguished from genetic drift.  The strength of evidence for selection based on DRIFTSEL for putatively adaptive phenotypes (pigment, macrohairs, flowering time) will be compared to that of phenotypes with no \emph{a priori} evidence of selection across an elevational gradient (culm diameter and leaf width). 
+As mentioned above, stem pigmentation, macrohair density, and flowering time are phenotypes thought to be under selection in teosinte across an elevational gradient.
+Pigmented and pilose plants have an advantage in retaining heat at high elevation (for a discussion of highland adaptation in the context of maize see \citealt{Eagles1994}).
+Additionally, \emph{mexicana} flowers much earlier than \emph{parviglumis} \citep{Rodriguez2006}, which may represent an adaptation to shorter growing seasons at high elevation.
+We will combine the phenotypic data collected in our half-sibling progeny arrays in the common garden experiments proposed in \ref{sss:fitness} with our genome-wide marker data obtained during \ref{sss:genomescan} from the mother of these arrays in order to evaluate evidence for selection on these potentially adaptive phenotypes.
+A method recently developed by \citet{Ovaskainen2011} and implemented in the software DRIFTSEL \citep{Karhunen2013} is particularly suited to this purpose.
+The method builds upon the $F_{ST}$--$Q_{ST}$ framework \citep{leinonen2013} for comparison of population differentiation and quantitative phenotype divergence and allows the signature of selection on a given phenotypic trait to be distinguished from genetic drift.
+The strength of evidence for selection based on DRIFTSEL for putatively adaptive phenotypes (pigment, macrohairs, flowering time) will be compared to that of phenotypes with no \emph{a priori} evidence of selection across an elevational gradient (culm diameter and leaf width).
+Under ecotone dynamics we would expect selection on these adaptive phenotypes across the entire elevational gradient of teosinte (\emph{i.e., parviglumis}, hybrids, \emph{mexicana}), whereas tension zone dynamics would likely result in selection being detected within \zp{} and \zm{} but not in hybrid zones.
+The evidence for selection on these putatively adaptive phenotypes will be considered in comparison to our measured neutral trait, the width of the leaf beneath the first lateral branch at the time of flowering.
 
-In addition, we will conduct association analyses to connect genotype to phenotype using GBS data described in \ref{sss:genomescan} and phenotypic data for potentially adaptive traits and traits gauging fitness.  Association analysis will be conducted using TASSEL5.0 \citep{Bradbury2007}. Significant associations will then be cross-referenced with regions of excess ancestry from \emph{parviglumis} or \emph{mexicana} in hybrid populations and zones identified in \ref{sss:genomescan}, particularly those that show evidence of selection based on additional population genetic summary statistics.  This final combination of data and analyses could reveal the phenotypes, loci, and ancestry source under selection within hybrid zones.
+In addition, we will conduct association analyses to connect genotype to phenotype using GBS data described in \ref{sss:genomescan} and phenotypic data for potentially adaptive traits and traits gauging fitness.
+Association analysis will be conducted using TASSEL5.0 \citep{Bradbury2007}. Significant associations will then be cross-referenced with regions of excess ancestry from \emph{parviglumis} or \emph{mexicana} in hybrid populations and zones identified in \ref{sss:genomescan}, particularly those that show evidence of selection based on additional population genetic summary statistics.
+This final combination of data and analyses could reveal the phenotypes, loci, and ancestry source under selection within hybrid zones.
 
 \paragraph{\emph{Preliminary Results:}} 
 \jri{add here prelim growth chamber expers. that suggest hybrids better than parents in some pops.}
 
 \paragraph{\emph{Potential Challenges:}}
-\jri{add here that if field collects not work, we already have smaller sets of seed from hybrid pops collected by collabs}
 
 Some of the population-genetic analyses proposed may have difficulty with the high rate of missingness and heterozygous error in GBS data.
 If these approaches do not work or force us to remove too much of our data, we will instead take advantage of approaches designed  to estimate admixture from genotype-likelihoods calculated on low-coverage sequence data \citep{skotte2013estimating}. 
